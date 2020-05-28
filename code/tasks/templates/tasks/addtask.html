@@ -3,7 +3,7 @@
 {% block title %}Nova Tarefa{% endblock  %}
 {% block content %}
     <div class="offset-1 col-10 insert-div">
-        <h1>Adicione a sua nova tarefa:</h1>
+        <h1>Novo item</h1>
         <form method="POST">
             {% csrf_token %}
             {{ form|crispy }}

@@ -2,6 +2,10 @@
     padding: 0;
 }
 
+.container-fluid .row {
+    margin: 0px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -22,6 +26,36 @@
     letter-spacing: 1px;
 }
 
+/*Dashboard*/
+
+.dashboard{
+    padding: 0;
+    width: 100%;
+    display: block;
+    margin: auto 0;
+}
+
+.dashboard h4{
+    font-size: 18px;
+}
+
+.dashboard span{
+    font-size: 30px;
+    display: block;
+    width: 100%;
+}
+
+.dashboard-box{
+    float:left;
+    background-color: #DFDFDF;
+    color:#FFF;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 130px;
+    width: 100%;
+    text-align: center;
+}
+
 /* Botão de adicionar */
 
 .add-div {
@@ -30,12 +64,6 @@
     display: inline-block;
     color: #fff;
     border-radius: 5px;
-    margin-right: 25px;
-}
-
-.insert-div{
-    margin-bottom: 20px;
-    margin-right: 25px;
 }
 
 .edit-div{
@@ -53,27 +81,43 @@
 
 .fas.fa-search {
     position: absolute;
-    top: 35%;
-    right: 26px;
+    top: 50%;
+    right: 15px;
     float: right;
     cursor: pointer;
 }
 
 .search-div{
-    margin: 0px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding-right: 4px;
     display: inline-block;
+    padding-top: 15px;
+}
+
+/* Filter */
+
+.filter-div {
+    display: inline-block;
+    padding: 0;
+    padding-top: 15px;
+}
+
+#filter {
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
 }
 
 /* Lista de tarefas */
 
 .list-div {
     padding: 0;
+    padding-top: 15px;
 }
 
 .tasks-list {
-    padding-left: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
 }
 
 .done {
@@ -115,7 +159,7 @@
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    /* background-color: #333; */
     height: 300px;
     border-top: 2px solid #202020;
 }
@@ -131,6 +175,8 @@ footer p{
 
 ul.messages {
     padding: 0px;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 ul.messages li {
@@ -153,4 +199,15 @@ ul.messages li {
 .step-links .current {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+/* Login */
+
+.auth-card{
+    margin-bottom: 30px;
+}
+
+.change-form-p {
+    margin-top:30px;
+    text-align: center;
 }
